@@ -179,3 +179,22 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+::-mz-scrollbar {
+  width: 1vw;
+}
+
+/* Track */
+::-mz-scrollbar-track {
+  background: rgba(200,200,200);
+}
+
+/* Handle */
+::-mz-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-mz-scrollbar-thumb:hover {
+  background: #555;
+}
