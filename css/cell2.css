@@ -1,0 +1,123 @@
+
+.preview {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 10vw;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.preview > div{
+  position: relative;
+  width: 24vw;
+  height: 24vw;
+  max-width: 27vh;
+  max-height: 27vh;
+  margin: 1vw;
+  overflow: hidden;
+}
+
+.preview img {
+  position: relative;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  z-index: -1;
+}
+
+.preview label > div {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  border-radius: 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.cover {
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  background-color: gainsboro;
+  opacity: 0;
+}
+
+.checkbox:checked ~ .cover {
+  z-index: 2;
+  opacity: 1;
+}
+
+.close1, .close2 {
+  width: 75%;
+  height: 5%;
+  top: 47.5%;
+  left: 12.5%;
+  position: absolute;
+  background-color: black;
+}
+
+.close1 {
+  transform: rotate(45deg);
+}
+
+.close2 {
+  transform: rotate(315deg);
+}
+
+#chk1:checked ~ .preview label[for="chk1"] ~ img,
+#chk2:checked ~ .preview label[for="chk2"] ~ img,
+#chk3:checked ~ .preview label[for="chk3"] ~ img,
+#chk4:checked ~ .preview label[for="chk4"] ~ img {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(0,0);
+  z-index: 3;
+  object-fit: contain;
+}
+
+#chk1:checked ~ .preview label[for="chk1"] > div,
+#chk2:checked ~ .preview label[for="chk2"] > div,
+#chk3:checked ~ .preview label[for="chk3"] > div,
+#chk4:checked ~ .preview label[for="chk4"] > div {
+  width: 7vw;
+  height: 7vw;
+  max-width: 7vh;
+  max-height: 7vh;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  right: 5vw;
+  top: 5vw;
+  z-index: 4;
+  opacity: .2;
+}
+
+#chk1:checked ~ .preview label[for="chk1"] > div:hover,
+#chk2:checked ~ .preview label[for="chk2"] > div:hover,
+#chk3:checked ~ .preview label[for="chk3"] > div:hover,
+#chk4:checked ~ .preview label[for="chk4"] > div:hover  {
+  opacity: 1;
+}
