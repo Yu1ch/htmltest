@@ -78,6 +78,7 @@ body {
 }
 
 .loaded .intro svg {
+  stroke-dashoffset: 0;
   animation:  SVG2 1s cubic-bezier(0.65, 0, 0.35, 1) alternate forwards;
 }
 
