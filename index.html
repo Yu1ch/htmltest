@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Site (For Online Exhibition)</title>
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript">
+  function loaded() {
+    setTimeout(function loaded2() {
+      let asd = document.querySelector('body');
+      asd.classList.add("loaded");
+    }, 1000);
+  }
+  function jump(address) {
+    setTimeout(function () {
+      let asd = document.querySelector('body');
+      asd.classList.add("jump");
+    }, 100);
+    setTimeout(function() {window.location.href=address;}, 1500);
+  }
+  </script>
+</head>
+
+<body onload="loaded()">
+
+  <div class="header">
+    <div class="header2">
+    <a href="#">
+  <svg viewBox="0 0 140 60">
+    <path
+      d="M 3.7882689,51.882867 25.61445,8.3637275 47.440628,51.882867 l 3.568901,0.01751 V 8.4247585 H 78.03242 c 1.444951,0 11.493891,1.047634 11.493891,11.7501565 0,10.702502 -10.02659,11.625819 -10.02659,11.625819 l 9.94845,20.14319 21.798269,-9.1e-5 V 16.196027 H 93.699911 V 8.4247585 H 136.4352" />
+  </svg>
+  <h1>
+ONLINE ART MUSEUM
+  </h1></a>
+  <nav class="sample-nav">
+    <ul>
+      <li><a onClick="jump('about.html')">ABOUT</a></li>
+      <li><a onClick="jump('Works.html')">GALLERY</a></li>
+      <li><a onClick="jump('mokuroku.html')">INDEX</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+<div class="intro3" id="intro">
+</div>
+<div class="intro2" id="intro">
+</div>
+<div class="intro" id="intro">
+
+
+  <svg viewBox="0 0 140 60">
+    <path
+      d="M 3.7882689,51.882867 25.61445,8.3637275 47.440628,51.882867 l 3.568901,0.01751 V 8.4247585 H 78.03242 c 1.444951,0 11.493891,1.047634 11.493891,11.7501565 0,10.702502 -10.02659,11.625819 -10.02659,11.625819 l 9.94845,20.14319 21.798269,-9.1e-5 V 16.196027 H 93.699911 V 8.4247585 H 136.4352" />
+  </svg>
+</div>
+
+  <a href="#message">
+    <div class="godown">
+      <div class="down1"></div>
+      <div class="down2"></div>
+  </div>
+</a>
+  <div class="message" id="message">
+    <h1>ごあいさつ</h1><br><br>
+    ご覧いただきありがとうございます。 <br>
+    私たちは例年、定期的に●●●や、●●●●●●●●●●●で展示を行っておりますが、本年度はウェブサイト上で開催することとなりました。 <br>
+    作品を写真で展示しております。お楽しみください。 <br>
+    2020年7月某日　●●部
+  </div>
+
+<footer>©2020 ●●部</footer>
+
+
+</body>
+</html>

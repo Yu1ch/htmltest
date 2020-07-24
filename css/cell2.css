@@ -1,0 +1,266 @@
+body {
+  background-image: url("../images/background.png");
+  background-attachment: fixed;
+  background-position: 85%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.preview {
+  top: 100vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  height: auto;
+  padding: 20vh 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.backdrop2 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.preview>label>div {
+  position: relative;
+  width: 24vw;
+  height: 24vw;
+  max-width: 27vh;
+  max-height: 27vh;
+  margin: 1vw;
+  overflow: hidden;
+}
+
+.preview>label>div>div {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  cursor: pointer;
+  transition: background .4s;
+}
+
+.preview>label>div>div:hover {
+  background: rgba(255, 255, 255, .5);
+}
+
+.preview img {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox, #description {
+  display: none;
+}
+
+.checkbox:not(#close):checked~.backdrop {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  background: rgba(255, 255, 255, .7);
+  z-index: 1;
+}
+
+.checkbox:not(#close):checked~.cover {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  background: none;
+  z-index: 3;
+}
+
+#chk1:checked~.preview .image1 img,
+#chk2:checked~.preview .image2 img,
+#chk3:checked~.preview .image3 img,
+#chk4:checked~.preview .image4 img,
+#chk5:checked~.preview .image5 img,
+#chk6:checked~.preview .image6 img,
+#chk7:checked~.preview .image7 img,
+#chk8:checked~.preview .image8 img,
+#chk9:checked~.preview .image9 img,
+#chk10:checked~.preview .image10 img,
+#chk11:checked~.preview .image11 img,
+#chk12:checked~.preview .image12 img,
+#chk13:checked~.preview .image13 img,
+#chk14:checked~.preview .image14 img,
+#chk15:checked~.preview .image15 img,
+#chk16:checked~.preview .image16 img {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  z-index: 2;
+  transform: translate(0, 0);
+  transition: width .5s;
+
+}
+
+#chk1:checked~#description:checked~.preview .image1 img,
+#chk2:checked~#description:checked~.preview .image2 img,
+#chk3:checked~#description:checked~.preview .image3 img,
+#chk4:checked~#description:checked~.preview .image4 img,
+#chk5:checked~#description:checked~.preview .image5 img,
+#chk6:checked~#description:checked~.preview .image6 img,
+#chk7:checked~#description:checked~.preview .image7 img,
+#chk8:checked~#description:checked~.preview .image8 img,
+#chk9:checked~#description:checked~.preview .image9 img,
+#chk10:checked~#description:checked~.preview .image10 img,
+#chk11:checked~#description:checked~.preview .image11 img,
+#chk12:checked~#description:checked~.preview .image12 img,
+#chk13:checked~#description:checked~.preview .image13 img,
+#chk14:checked~#description:checked~.preview .image14 img,
+#chk15:checked~#description:checked~.preview .image15 img,
+#chk16:checked~#description:checked~.preview .image16 img {
+  width: 67%;
+  transition: width .5s;
+}
+
+.close, .description {
+  width: 7vh;
+  height: 7vh;
+  border: 1px solid black;
+  position: fixed;
+  cursor: pointer;
+  z-index: 5;
+  top: -7vh;
+  display: flex;
+  transition: top .5s;
+  border-radius: 50%;
+}
+
+.close {
+  right: 5vw;
+}
+
+.description {
+  right: calc(3vw + 14vh);
+}
+
+.checkbox:not(#close):checked~label .close {
+  top: 3%;
+  transition: top .5s;
+}
+
+.close1, .close2 {
+  width: 75%;
+  height: 5%;
+  top: 47.5%;
+  left: 12.5%;
+  position: absolute;
+  background-color: black;
+  border-radius: calc(10% / 3) / 50%
+}
+
+.close1 {
+  transform: rotate(45deg);
+}
+
+.close2 {
+  transform: rotate(315deg);
+}
+
+.checkbox:not(#close):checked~label .description {
+  top: 3%;
+  transition: top .5s;
+}
+
+.descriptiona {
+  width: 65%;
+  height: 80%;
+  border: 0.3vh solid black;
+  border-radius: 12.3% / 10%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptiona div {
+  width: 70%;
+  height: 5%;
+  position: relative;
+  background: black;
+  margin: 12.5% 0;
+}
+
+/*
+@media all and (orientation: landscape) {
+}
+*/
+.preview>label span,
+#chk1:checked~.preview .image1 span,
+#chk2:checked~.preview .image2 span,
+#chk3:checked~.preview .image3 span,
+#chk4:checked~.preview .image4 span,
+#chk5:checked~.preview .image5 span,
+#chk6:checked~.preview .image6 span,
+#chk7:checked~.preview .image7 span,
+#chk8:checked~.preview .image8 span,
+#chk9:checked~.preview .image9 span,
+#chk10:checked~.preview .image10 span,
+#chk11:checked~.preview .image11 span,
+#chk12:checked~.preview .image12 span,
+#chk13:checked~.preview .image13 span,
+#chk14:checked~.preview .image14 span,
+#chk15:checked~.preview .image15 span,
+#chk16:checked~.preview .image16 span {
+  right: -33%;
+  position: fixed;
+  top: 0;
+  width: 33%;
+  height: 100vh;
+  cursor: pointer;
+  background: rgba(255, 255, 255, .7);
+  cursor: default;
+  z-index: 4;
+  padding: calc(3vw + 9vh) 3vw;
+  overflow: auto;
+  transition: right .5s;
+}
+
+#chk1:checked~#description:checked~.preview .image1 span,
+#chk2:checked~#description:checked~.preview .image2 span,
+#chk3:checked~#description:checked~.preview .image3 span,
+#chk4:checked~#description:checked~.preview .image4 span,
+#chk5:checked~#description:checked~.preview .image5 span,
+#chk6:checked~#description:checked~.preview .image6 span,
+#chk7:checked~#description:checked~.preview .image7 span,
+#chk8:checked~#description:checked~.preview .image8 span,
+#chk9:checked~#description:checked~.preview .image9 span,
+#chk10:checked~#description:checked~.preview .image10 span,
+#chk11:checked~#description:checked~.preview .image11 span,
+#chk12:checked~#description:checked~.preview .image12 span,
+#chk13:checked~#description:checked~.preview .image13 span,
+#chk14:checked~#description:checked~.preview .image14 span,
+#chk15:checked~#description:checked~.preview .image15 span,
+#chk16:checked~#description:checked~.preview .image16 span {
+  right: 0;
+}

@@ -1,0 +1,57 @@
+body {
+  background-image: url("../images/background.png");
+  background-attachment: fixed;
+  background-position: 85%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.godown {
+  width: 10vw;
+  height: 10vw;
+  max-width: 10vh;
+  max-height: 10vh;
+  top: 80vh;
+  position: absolute;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;;
+}
+
+.down1, .down2 {
+  width: 50%;
+  height: 5%;
+  border-radius: 5% / 50%;
+  position: absolute;
+  background-color: black;
+  top: 60%;
+  transition: background-color .5s;
+}
+
+.godown:hover .down1, .godown:hover .down2{
+  background-color: white;
+}
+
+.down1 {
+  transform: rotate(45deg) translateX(-46%);
+}
+
+.down2 {
+  transform: rotate(315deg) translateX(46%);
+}
+
+.message {
+  width: 50vw;
+  height: 85vh;
+  top: 100%;
+  left: 0;
+  margin: 5vh 5%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  font-size: 20px;
+  padding: 10vh 5vh;
+  letter-spacing: .1vh;
+  line-height: 1.5em;
+}

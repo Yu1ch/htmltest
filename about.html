@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Site (For Online Exhibition)</title>
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/about.css">
+  <script type="text/javascript">
+  function loaded() {
+    setTimeout(function loaded2() {
+      let asd = document.querySelector('body');
+      asd.classList.add("loaded");
+    }, 1000);
+  }
+  function jump(address) {
+    setTimeout(function () {
+      let asd = document.querySelector('body');
+      asd.classList.add("jump");
+    }, 100);
+    setTimeout(function() {window.location.href=address;}, 1500);
+  }
+  </script>
+</head>
+
+<body onload="loaded()">
+
+  <div class="header">
+    <div class="header2">
+    <a onClick="jump('index.html')">
+  <svg viewBox="0 0 140 60">
+    <path
+      d="M 3.7882689,51.882867 25.61445,8.3637275 47.440628,51.882867 l 3.568901,0.01751 V 8.4247585 H 78.03242 c 1.444951,0 11.493891,1.047634 11.493891,11.7501565 0,10.702502 -10.02659,11.625819 -10.02659,11.625819 l 9.94845,20.14319 21.798269,-9.1e-5 V 16.196027 H 93.699911 V 8.4247585 H 136.4352" />
+  </svg>
+  <h1>
+ONLINE ART MUSEUM
+  </h1></a>
+  <nav class="sample-nav">
+    <ul>
+      <li><a href="#">ABOUT</a></li>
+      <li><a onClick="jump('Works.html')">GALLERY</a></li>
+      <li><a onClick="jump('mokuroku.html')">INDEX</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+<div class="intro3" id="intro">
+</div>
+<div class="intro2" id="intro">
+</div>
+<div class="intro" id="intro">
+
+
+  <svg viewBox="0 0 140 60">
+    <path
+      d="M 3.7882689,51.882867 25.61445,8.3637275 47.440628,51.882867 l 3.568901,0.01751 V 8.4247585 H 78.03242 c 1.444951,0 11.493891,1.047634 11.493891,11.7501565 0,10.702502 -10.02659,11.625819 -10.02659,11.625819 l 9.94845,20.14319 21.798269,-9.1e-5 V 16.196027 H 93.699911 V 8.4247585 H 136.4352" />
+  </svg>
+</div>
+
+<div class="about">
+
+  <h1>-About-</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<footer>©2020 ●●部</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Test Site (For Online Exhibition)</title>
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/cell2.css">
+  <script type="text/javascript">
+  function loaded() {
+    setTimeout(function loaded2() {
+      let asd = document.querySelector('body');
+      asd.classList.add("loaded");
+    }, 1000);
+  }
+  function jump(address) {
+    setTimeout(function () {
+      let asd = document.querySelector('body');
+      asd.classList.add("jump");
+    }, 100);
+    setTimeout(function() {window.location.href=address;}, 1500);
+  }
+  </script>
+</head>
+
+<body onload="loaded()">
+
+  <div class="header">
+    <div class="header2">
+    <a onClick="jump('index.html')">
+  <svg viewBox="0 0 140 60">
+    <path
+      d="M 3.7882689,51.882867 25.61445,8.3637275 47.440628,51.882867 l 3.568901,0.01751 V 8.4247585 H 78.03242 c 1.444951,0 11.493891,1.047634 11.493891,11.7501565 0,10.702502 -10.02659,11.625819 -10.02659,11.625819 l 9.94845,20.14319 21.798269,-9.1e-5 V 16.196027 H 93.699911 V 8.4247585 H 136.4352" />
+  </svg>
+  <h1>
+ONLINE ART MUSEUM
+  </h1></a>
+  <nav class="sample-nav">
+    <ul>
+      <li><a onClick="jump('about.html')">ABOUT</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a onClick="jump('mokuroku.html')">INDEX</a></li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+<div class="intro3" id="intro">
+</div>
+<div class="intro2" id="intro">
+</div>
+<div class="intro" id="intro">
+
+
+  <svg viewBox="0 0 140 60">
+    <path
+      d="M 3.7882689,51.882867 25.61445,8.3637275 47.440628,51.882867 l 3.568901,0.01751 V 8.4247585 H 78.03242 c 1.444951,0 11.493891,1.047634 11.493891,11.7501565 0,10.702502 -10.02659,11.625819 -10.02659,11.625819 l 9.94845,20.14319 21.798269,-9.1e-5 V 16.196027 H 93.699911 V 8.4247585 H 136.4352" />
+  </svg>
+</div>
+
+  <input type="radio" name="select" id="chk1" class="checkbox">
+  <input type="radio" name="select" id="chk2" class="checkbox">
+  <input type="radio" name="select" id="chk3" class="checkbox">
+  <input type="radio" name="select" id="chk4" class="checkbox">
+  <input type="radio" name="select" id="chk5" class="checkbox">
+  <input type="radio" name="select" id="chk6" class="checkbox">
+  <input type="radio" name="select" id="chk7" class="checkbox">
+  <input type="radio" name="select" id="chk8" class="checkbox">
+  <input type="radio" name="select" id="chk9" class="checkbox">
+  <input type="radio" name="select" id="chk10" class="checkbox">
+  <input type="radio" name="select" id="chk11" class="checkbox">
+  <input type="radio" name="select" id="chk12" class="checkbox">
+  <input type="radio" name="select" id="chk13" class="checkbox">
+  <input type="radio" name="select" id="chk14" class="checkbox">
+  <input type="radio" name="select" id="chk15" class="checkbox">
+  <input type="radio" name="select" id="chk16" class="checkbox">
+  <input type="radio" name="select" id="close" class="checkbox" checked>
+  <input type="checkbox" id="description" checked>
+  <label for="close">
+    <div class="close">
+      <div class="close1"></div>
+      <div class="close2"></div>
+    </div>
+  </label>
+  <label for="description">
+    <div class="description">
+      <div class="descriptiona">
+        <div class="description1"></div>
+        <div class="description2"></div>
+        <div class="description3"></div>
+      </div>
+    </div>
+  </label>
+  <div class="preview">
+    <label for="chk1">
+      <div class="image1">
+        <img src="images/1.jpg" alt="">
+        <div class="cover1"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk2">
+      <div class="image2">
+        <img src="images/2.jpg" alt="">
+        <div class="cover2"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk3">
+      <div class="image3">
+        <img src="images/3.jpg" alt="">
+        <div class="cover3"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk4">
+      <div class="image4">
+        <img src="images/4.jpg" alt="">
+        <div class="cover4"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk5">
+      <div class="image5">
+        <img src="images/5.jpg" alt="">
+        <div class="cover5"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk6">
+      <div class="image6">
+        <img src="images/6.jpg" alt="">
+        <div class="cover6"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk7">
+      <div class="image7">
+        <img src="images/7.jpg" alt="">
+        <div class="cover7"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk8">
+      <div class="image8">
+        <img src="images/8.jpg" alt="">
+        <div class="cover8"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk9">
+      <div class="image9">
+        <img src="images/9.jpg" alt="">
+        <div class="cover9"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk10">
+      <div class="image10">
+        <img src="images/10.jpg" alt="">
+        <div class="cover10"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk11">
+      <div class="image11">
+        <img src="images/11.jpg" alt="">
+        <div class="cover11"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk12">
+      <div class="image12">
+        <img src="images/12.jpg" alt="">
+        <div class="cover12"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk13">
+      <div class="image13">
+        <img src="images/13.jpg" alt="">
+        <div class="cover13"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk14">
+      <div class="image14">
+        <img src="images/14.jpg" alt="">
+        <div class="cover14"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk15">
+      <div class="image15">
+        <img src="images/15.jpg" alt="">
+        <div class="cover15"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+    <label for="chk16">
+      <div class="image16">
+        <img src="images/16.jpg" alt="">
+        <div class="cover16"></div>
+        <span>
+          <h1>Title</h1>
+          <h2>Grade/Author</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </span>
+      </div>
+    </label>
+  </div>
+  <div class="backdrop"></div>
+  <div class="cover"></div>
+  <div class="backdrop2"></div>
+  <footer>©2020 ●●部</footer>
+</body>
+
+</html>
